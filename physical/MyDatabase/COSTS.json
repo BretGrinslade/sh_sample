@@ -1,0 +1,74 @@
+{
+  "physicalTable" : {
+    "name" : "COSTS",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "PROD_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "TIME_ID",
+      "dataType" : "DATETIME",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "PROMO_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "CHANNEL_ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "UNIT_COST",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "UNIT_PRICE",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    } ],
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.CHANNELS",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.COSTS.CHANNEL_ID",
+        "rightColumn" : "physicalColumn:MyDatabase.CHANNELS.CHANNEL_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.PRODUCTS",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.COSTS.PROD_ID",
+        "rightColumn" : "physicalColumn:MyDatabase.PRODUCTS.PROD_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.PROMOTIONS",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.COSTS.PROD_ID",
+        "rightColumn" : "physicalColumn:MyDatabase.PROMOTIONS.PROMO_ID"
+      } ]
+    }, {
+      "rightTable" : "physicalTable:MyDatabase.TIMES",
+      "useJoinExpression" : false,
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE",
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.COSTS.TIME_ID",
+        "rightColumn" : "physicalColumn:MyDatabase.TIMES.TIME_ID"
+      } ]
+    } ]
+  }
+}

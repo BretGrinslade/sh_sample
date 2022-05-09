@@ -1,0 +1,36 @@
+{
+  "presentationTable" : {
+    "name" : "COSTS",
+    "presentationColumns" : [ {
+      "name" : "PROD_ID",
+      "sourceLogicalColumn" : "logicalColumn:BA1.COSTS.PROD_ID"
+    }, {
+      "name" : "TIME_ID",
+      "sourceLogicalColumn" : "logicalColumn:BA1.COSTS.TIME_ID"
+    }, {
+      "name" : "PROMO_ID",
+      "sourceLogicalColumn" : "logicalColumn:BA1.COSTS.PROMO_ID"
+    }, {
+      "name" : "CHANNEL_ID",
+      "sourceLogicalColumn" : "logicalColumn:BA1.COSTS.CHANNEL_ID"
+    }, {
+      "name" : "UNIT_COST",
+      "sourceLogicalColumn" : "logicalColumn:BA1.COSTS.UNIT_COST"
+    }, {
+      "name" : "UNIT_PRICE",
+      "sourceLogicalColumn" : "logicalColumn:BA1.COSTS.UNIT_PRICE"
+    }, {
+      "name" : "PROD_CATEGORY",
+      "sourceLogicalColumn" : "logicalColumn:BA1.PRODUCTS.PROD_CATEGORY"
+    }, {
+      "name" : "PROD_CATEGORY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BA1.PRODUCTS.PROD_CATEGORY_DESC"
+    }, {
+      "name" : "CHANNEL_DESC",
+      "sourceLogicalColumn" : "logicalColumn:BA1.CHANNELS.CHANNEL_DESC"
+    }, {
+      "name" : "CHANNEL_CLASS",
+      "sourceLogicalColumn" : "logicalColumn:BA1.CHANNELS.CHANNEL_CLASS"
+    } ]
+  }
+}
