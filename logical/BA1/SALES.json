@@ -108,7 +108,7 @@
         "derivedFrom" : "LOGICAL_COLUMNS",
         "logicalExpression" : {
           "expressionTemplate" : "%1 * %2",
-          "expressionObjects" : [ "logicalColumn:BA1.SALES.QUANTITY_SOLD", "logicalColumn:BA1.COSTS.UNIT_COST" ]
+          "expressionObjects" : [ "logicalColumn:BA1.SALES.QUANTITY_SOLD", "logicalColumn:BA1.COSTS.UNIT_PRICE" ]
         }
       }
     }, {

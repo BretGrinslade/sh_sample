@@ -75,13 +75,13 @@
         "name" : "Total",
         "sourceLogicalLevel" : "logicalLevel:BA1.PRODUCTS.Total"
       }, {
-        "name" : "Product Subcategory",
-        "sourceLogicalLevel" : "logicalLevel:BA1.PRODUCTS.Product Subcategory",
-        "displayColumn" : "PROD_SUBCATEGORY_DESC"
-      }, {
         "name" : "Product Category",
         "sourceLogicalLevel" : "logicalLevel:BA1.PRODUCTS.Product Category",
-        "displayColumn" : "PROD_SUBCATEGORY_DESC"
+        "displayColumn" : "presentationColumn:SH SA.PRODUCTS.PROD_CATEGORY_DESC"
+      }, {
+        "name" : "Product Subcategory",
+        "sourceLogicalLevel" : "logicalLevel:BA1.PRODUCTS.Product Subcategory",
+        "displayColumn" : "presentationColumn:SH SA.PRODUCTS.PROD_SUBCATEGORY_DESC"
       }, {
         "name" : "Detail",
         "sourceLogicalLevel" : "logicalLevel:BA1.PRODUCTS.Detail"

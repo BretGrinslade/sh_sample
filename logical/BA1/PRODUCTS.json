@@ -349,7 +349,7 @@
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "PROD_CATEGORY_ID" ],
-        "displayKey" : "PROD_SUBCATEGORY_DESC"
+        "displayKey" : "PROD_CATEGORY_DESC"
       } ],
       "logicalHierarchies" : [ {
         "name" : "H1",
